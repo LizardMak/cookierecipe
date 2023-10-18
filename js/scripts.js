@@ -2,7 +2,8 @@
 window.onload = function() {
  let lightMode = document.querySelector("#light");
  let darkMode = document.querySelector("#dark");
- let largeText = document.querySelector("#textLarge")
+ let largeText = document.querySelector("#textLarge");
+ let textNormal = document.querySelector("#textNormal");
  let body = document.body;
  darkMode.onclick = function() {
   body.style.color = "white";
@@ -15,4 +16,7 @@ window.onload = function() {
  largeText.onclick = function () {
   body.style.fontSize = "x-large";
  };
+ textNormal.onclick = function() {
+  body.style.fontSize = "medium";
+ }
 };
